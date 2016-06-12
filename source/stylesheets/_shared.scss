@@ -1,0 +1,21 @@
+body {
+  background-color: $body-bg;
+}
+
+.main-section--header {
+  margin-top: 60px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .main-section--header {
+    margin-top: 30px;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}

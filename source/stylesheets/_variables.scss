@@ -1,0 +1,36 @@
+$body-font-family: 'Lato', sans-serif;
+$white: #fff;
+
+$body-bg: #e3e3e3;
+$h1-font-size: 3.43rem;
+$paragraph-font-size: 1.375rem;
+
+$topbar-height: 3.5rem;
+$topbar-bg-color: #262626;
+$topbar-link-bg-hover: #0f0f0f;
+$topbar-link-color-hover: #e53646;
+$topbar-dropdown-link-color-hover: $white;
+
+$topbar-divider-border-bottom: 1px solid $topbar-link-bg-hover;
+
+$topbar-dropdown-bg: $topbar-link-bg-hover;
+$topbar-dropdown-link-bg: $topbar-link-bg-hover;
+$topbar-dropdown-link-bg-hover: transparent;
+$topbar-dropdown-font-size: 16px;
+
+$topbar-link-font-size: 18px;
+$topbar-arrows: false;
+$alert-color: #e53646;
+
+
+$tabbar-bg: $topbar-bg-color;
+$tabbar-height: $topbar-height;
+$tabbar-left-section-border: none;
+
+$off-canvas-overlay-background: transparent;
+$off-canvas-overlay-background-hover: $off-canvas-overlay-background;
+$off-canvas-bg: $topbar-bg-color;
+$off-canvas-bg-hover: $topbar-dropdown-link-bg;
+
+$off-canvas-link-padding: 0.844rem;
+$off-canvas-link-active: #008cba;

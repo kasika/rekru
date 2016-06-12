@@ -1,0 +1,55 @@
+.off-canvas-wrap{"data-offcanvas" => ""}
+  .inner-wrap
+    %nav.top-bar.show-for-large-up{"data-topbar" => ""}
+      %ul.title-area
+        %li.toggle-topbar.menu-icon
+          %a{:href => "#"}
+            %span Menu
+      %section.middle.top-bar-section
+        %ul.right
+          %li.divider
+          %li.has-dropdown.megamenu
+            %a.sweep-to-top{:href => "#"} Item 1
+            %ul.dropdown.dropdown-wrapper
+              - 3.times do |num|
+                %li
+                  %a{:href => "#"}
+                    Item #{num + 1}
+          %li.divider
+          - 5.times do |num|
+            %li
+              %a.sweep-to-top{:href => "#"}
+                Item #{num + 2}
+            %li.divider
+          %li.has-form
+            %a.alert.large.button{:href => "#"} CONTACT
+    %nav.tab-bar.show-for-medium-down
+      %section.left-small
+        %a#startupButton.left-off-canvas-toggle.lines-button.close-btn.arrow-left{:href => "#"}
+          %span.lines
+    %aside.left-off-canvas-menu
+      %ul.off-canvas-list
+        %li.has-submenu
+          %a{:href => "#"} Item 1
+          %ul.left-submenu
+            %li.back
+              %a.back{:href => "#"} Back
+            - 3.times do |num|
+              %li
+                %a{:href => "#"}
+                  Item #{num + 1}
+        - 5.times do |num|
+          %li
+            %a{:href => "#"}
+              Item #{num + 2}
+        .md-top-margin.md-left-margin
+          %a.alert.tiny.button{:href => "#"} CONTACT
+    %section.main-section
+      .row
+        .large-8.large-offset-2.columns.text-center.main-section--header
+          %h1 We build web applications
+          .row
+            .small-10.small-offset-1.columns
+              %p We are Ruby and JavaScript developers specialized in building web applications for startups since 2006
+              %img{:src => "images/ragnar.png", :srcset => "images/ragnar@2x.png 2x, images/ragnar@3x.png 3x"}/
+    %a.exit-off-canvas

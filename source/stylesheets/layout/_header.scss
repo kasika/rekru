@@ -1,0 +1,112 @@
+.top-bar {
+  .has-form  {
+    padding-left: 3.5rem;
+
+    > .button,
+    > button {
+      top: (($topbar-height - ($topbar-input-height +1)) / 2);
+      height: $topbar-input-height +1;
+      font-size: $topbar-link-font-size - 2;
+      line-height: 1.7;
+    }
+  }
+}
+
+.top-bar-section {
+  ul {
+    li {
+      &:not(.has-form) {
+        a:not(.button) {
+          padding: 0 $topbar-link-padding + 0.5;
+
+          &:hover {
+            background-color: $topbar-bg-color;
+
+            @if ($topbar-link-bg-hover) {
+              background: $topbar-bg-color;
+            }
+          }
+        }
+      }
+
+      &.has-dropdown {
+        &:hover:not(.has-form) > a, > a:hover {
+          color: $white;
+        }
+
+        .dropdown {
+          text-align: center;
+          background-color: $topbar-dropdown-bg;
+
+          li {
+            display: inline-block;
+            width: auto;
+            float: none;
+
+            &.js-generated {
+              display: none;
+            }
+
+            a {
+              font-size: $topbar-dropdown-font-size;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+
+      a.button {
+        padding-#{$default-float}: $topbar-link-padding +1;
+        padding-#{$opposite-direction}: $topbar-link-padding +1;
+        height: 2.75rem;
+        font-size: $topbar-link-font-size;
+      }
+    }
+  }
+}
+
+.tab-bar {
+  .left-small {
+    width: auto;
+
+    &:hover {
+      background: $topbar-dropdown-link-bg;
+    }
+
+    &:active {
+      background: $off-canvas-link-active;
+    }
+  }
+}
+
+.left-off-canvas-menu {
+  ul.off-canvas-list {
+
+    li a {
+      border-bottom: 1px solid $black;
+      color: $white;
+      font-size: $topbar-link-font-size;
+    }
+
+    .has-submenu {
+      background: $topbar-dropdown-link-bg;
+
+      .left-submenu {
+        height: auto;
+        background: $topbar-bg-color;
+
+        li {
+          background: $topbar-dropdown-link-bg;
+
+          a {
+            border-bottom: 2px solid $black;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
